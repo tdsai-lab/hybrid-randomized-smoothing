@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hybrid-rs"
+version = "0.1.0"
+description = "Hybrid randomized smoothing certification over text + image inputs for multimodal safety classifiers."
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "torchvision",
+    "transformers",
+    "datasets",
+    "huggingface_hub",
+    "tqdm",
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+    "statsmodels",
+    "Pillow",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

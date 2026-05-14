@@ -1,0 +1,44 @@
+# Local config — machine-specific paths, not for the submission.
+env.local
+.env
+
+# Cloned upstream repo (re-fetched by setup.sh).
+diffusion_denoised_smoothing/
+
+# Build / Python artefacts.
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+*.egg
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments.
+.venv/
+venv/
+env/
+
+# IDE / editor.
+.claude/
+.idea/
+.vscode/
+.DS_Store
+
+# Logs.
+*.log
+
+# Paper / submission PDFs.
+*.pdf
+
+# Outputs.
+results/
+results_l0/
+results_text_l0/
+results_shared_D/
+results_append_suffix/
+denoiser_outputs/
